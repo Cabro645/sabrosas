@@ -71,7 +71,7 @@ function verCarrito() {
     total += item.precio;
   });
   html += `<h3>Total: $${total}</h3>`;
-  html += `<a class="whatsapp" href="https://wa.me/5493814123456?text=${encodeURIComponent(
+  html += `<a class="whatsapp" href="https://wa.me/5492944310757?text=${encodeURIComponent(
     carrito.map(p => `${p.nombre} - $${p.precio}`).join('\n') + `\nTotal: $${total}`
   )}" target="_blank">Enviar pedido por WhatsApp</a>`;
   document.getElementById("contenido").innerHTML = html;
