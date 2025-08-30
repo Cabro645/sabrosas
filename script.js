@@ -15,9 +15,9 @@ let carrito = [];
 function mostrarInicio() {
   document.getElementById("contenido").innerHTML = `
     <h2>Bienvenido a Sabrosas</h2>
-    <p>Empanadas de matambre ahumado, cocidas al horno de barro y hechas con masa casera. ¡Sabores que cuentan historias!</p>
-    <img src="img/empanada1.jpg" alt="Empanadas de matambre" class="img-inicio" />
-    <p style="margin-top: 15px;">Pedidos por docena · $20.000 · Envíos en CABA</p>
+    <p>Empanadas de Matambre Ahumado. ¡Sabores que cuentan historias!</p>
+    <img src="img/empanada1.jpg" alt="Empanadas de Matambre" class="img-inicio" />
+    <p style="margin-top: 15px;">Pedidos por docena · $20.000 · </p>
   `;
 }
 
