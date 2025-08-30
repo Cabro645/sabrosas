@@ -147,5 +147,18 @@ a.whatsapp {
     max-width: 90%;
   }
 }
+
+
+#mensaje-carrito {
+  background-color: #d4a373;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 300px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+}
+
 }
 

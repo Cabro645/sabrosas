@@ -46,8 +46,18 @@ function mostrarAcerca() {
 
 function agregar(i) {
   carrito.push(productos[i]);
-  alert(`${productos[i].nombre} agregada al carrito`);
+
+  const mensaje = document.getElementById("mensaje-carrito");
+  mensaje.innerText = `${productos[i].nombre} agregada al carrito`;
+  mensaje.style.display = "block";
+
+  setTimeout(() => {
+    mensaje.style.display = "none";
+  }, 2500);
+  document.getElementById("contador").innerText = carrito.length;
+
 }
+
 
 function verCarrito() {
   let html = "<h2>Tu carrito</h2>";
