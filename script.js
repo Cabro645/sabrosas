@@ -77,6 +77,7 @@ function verCarrito() {
   document.getElementById("contenido").innerHTML = html;
 }
 
+
 function verContacto() {
   document.getElementById("contenido").innerHTML = `
     <h2>Contacto</h2>
@@ -84,14 +85,8 @@ function verContacto() {
     <p>📞 Teléfono: <a href="tel:+5492944310757">2944 310757</a></p>
     <p>📱 WhatsApp: <a href="https://wa.me/5492944310757" target="_blank">Enviar mensaje</a></p>
     <p>📧 Email: <a href="mailto:jorgedanielrojas20@gmail.com">jorgedanielrojas20@gmail.com</a></p>
-    <p>💬 También podés encontrarnos en nuestras redes:</p>
-    <div class="redes">
-      <a href="https://www.instagram.com/sabrosas" target="_blank">Instagram</a> ·
-      <a href="https://www.facebook.com/sabrosas" target="_blank">Facebook</a> ·
-      <a href="https://www.tiktok.com/@sabrosas" target="_blank">TikTok</a>
-    </div>
+    <p>💬 Podés escribirnos directamente para consultas, pedidos o eventos especiales. Respondemos rápido y con gusto.</p>
   `;
 }
-
 
 mostrarInicio();
