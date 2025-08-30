@@ -30,7 +30,7 @@ function mostrarCatalogo() {
         <h3>${prod.nombre}</h3>
         <p>Precio: $${prod.precio}</p>
         ${prod.imagenes.map(img => `<img src="${img}" alt="${prod.nombre}" />`).join('')}
-        <a class="whatsapp" href="https://wa.me/5492944310747?text=${encodeURIComponent(mensaje)}" target="_blank">
+        <a class="whatsapp" href="https://wa.me/5492944310757?text=${encodeURIComponent(mensaje)}" target="_blank">
           Pedir por WhatsApp
         </a>
       </div>
