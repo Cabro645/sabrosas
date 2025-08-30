@@ -81,8 +81,8 @@ function verContacto() {
   document.getElementById("contenido").innerHTML = `
     <h2>Contacto</h2>
     <p>📍 Estamos en Bariloche, Río Negro</p>
-    <p>📞 Teléfono: <a href="tel:+5492944310747">2944 310747</a></p>
-    <p>📱 WhatsApp: <a href="https://wa.me/5492944310747" target="_blank">Enviar mensaje</a></p>
+    <p>📞 Teléfono: <a href="tel:+5492944310757">2944 310757</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/5492944310757" target="_blank">Enviar mensaje</a></p>
     <p>📧 Email: <a href="mailto:jorgedanielrojas20@gmail.com">jorgedanielrojas20@gmail.com</a></p>
     <p>💬 También podés encontrarnos en nuestras redes:</p>
     <div class="redes">
