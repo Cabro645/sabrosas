@@ -23,18 +23,22 @@ function mostrarInicio() {
 
 function mostrarCatalogo() {
   let html = "<h2>Catálogo</h2>";
-  productos.forEach((prod, i) => {
+  productos.forEach((prod) => {
+    const mensaje = `Hola Jorge, quiero pedir: ${prod.nombre} por $${prod.precio}`;
     html += `
       <div class="card">
         <h3>${prod.nombre}</h3>
         <p>Precio: $${prod.precio}</p>
         ${prod.imagenes.map(img => `<img src="${img}" alt="${prod.nombre}" />`).join('')}
-        <button class="agregar" onclick="agregar(${i})">Agregar al carrito</button>
+        <a class="whatsapp" href="https://wa.me/5492944310747?text=${encodeURIComponent(mensaje)}" target="_blank">
+          Pedir por WhatsApp
+        </a>
       </div>
     `;
   });
   document.getElementById("contenido").innerHTML = html;
 }
+
 
 function mostrarAcerca() {
   document.getElementById("contenido").innerHTML = `
@@ -72,5 +76,22 @@ function verCarrito() {
   )}" target="_blank">Enviar pedido por WhatsApp</a>`;
   document.getElementById("contenido").innerHTML = html;
 }
+
+function verContacto() {
+  document.getElementById("contenido").innerHTML = `
+    <h2>Contacto</h2>
+    <p>📍 Estamos en Bariloche, Río Negro</p>
+    <p>📞 Teléfono: <a href="tel:+5492944310747">2944 310747</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/5492944310747" target="_blank">Enviar mensaje</a></p>
+    <p>📧 Email: <a href="mailto:jorgedanielrojas20@gmail.com">jorgedanielrojas20@gmail.com</a></p>
+    <p>💬 También podés encontrarnos en nuestras redes:</p>
+    <div class="redes">
+      <a href="https://www.instagram.com/sabrosas" target="_blank">Instagram</a> ·
+      <a href="https://www.facebook.com/sabrosas" target="_blank">Facebook</a> ·
+      <a href="https://www.tiktok.com/@sabrosas" target="_blank">TikTok</a>
+    </div>
+  `;
+}
+
 
 mostrarInicio();
